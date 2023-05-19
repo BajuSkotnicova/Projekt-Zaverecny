@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ title }}</title>
+
+	
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Rubik&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Rubik&display=swap" rel="stylesheet"> 
+
+	<!-- Naše vlastní CSS -->
+	<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+	<div class="wrapper">
+
+	
+		<header>
+			<div class="header__inner">
+				<div class="header__left">
+					<div class="header__logo">SIVAJ Group</div>
+
+			
+				</div>
+
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__item"><a href="/" class="menu__link">Úvod</a></li>
+						<li class="menu__item"><a href="/fotovoltaika" class="menu__link">Fotovoltaika</a></li>
+						<li class="menu__item"><a href="/reality/" class="menu__link">Reality</a></li>
+						<li class="menu__item"><a href="/hr/" class="menu__link">HR</a></li>
+						<li class="menu__item"><a href="/kontakt/" class="menu__link">Kontakt</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			
+		</header>
+
+		<main class="main">
+            {{ content | safe }}
+        </main>
+
+
+		<footer class="footer">
+
+			<div class="footer__flex">
+				<div class="footer__flex-content">
+					<h2>Sivaj group</h2>
+					<h3 class="footer__links"> Sivaj Group s.r.o</h3> 
+						<p>Sídlo: Zátiší 205, 70 900 Ostrava </p>
+						<p> IČO: 10913896</p>
+					
+				</div>
+			
+			
+			<div class="footer__flex-content">
+					<h2>Kontakty</h2>
+					<p>
+						<span class="footer__title">Telefon:</span><br>
+						<p>+420 730 720 508</p>
+					</p>
+
+				
+					<p>
+						<span class="footer__title">E-mail:</span><br>
+						<a href="mailto:sivajgroup@gmail.com"> sivajgroup@gmail.com</a>
+					</p>
+				</div>
+				
+					<div class="footer__flex-content">
+			
+					<h2>Zabýváme se</h2>
+					<p>
+						<span class="footer__title">Fotovoltaikou</span><br>
+						
+					</p>
+					<p>
+						<span class="footer__title">Realitami</span><br>
+						
+					</p>
+
+				
+					<p>
+						<span class="footer__title">HR</span><br>
+						
+					</p>
+				</div>
+				
+			</div>
+		
+
+			<div class="footer__copyright">
+				&copy;2023, Barbora Skotnicová
+			</div>
+		</footer>
+
+
+	</div><!-- .wrapper -->
+</body>
+</html>
